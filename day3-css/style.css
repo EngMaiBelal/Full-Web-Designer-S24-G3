@@ -1,0 +1,49 @@
+ /* selector {property:value;} Internal css*/
+ body{
+    background-image: url('hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll; 
+    /* font-family: "Lucida Console", "Courier New", monospace; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: "Matemasie", sans-serif; */
+    /* font-weight: 400;
+    font-style: normal; */
+}
+h1{
+    /* color:red;
+    color: rgb(255, 0, 0);
+    color: rgba(68, 6, 6, 0.5);
+    color: #2d830b;
+    color: hsl(176, 100%, 50%); */
+    /* background-color: rgb(0,0,0); */
+    color: hsla(176, 100%, 50%, 0.5);
+    text-align: left;
+    /* text-decoration-line: line-through; */
+    text-decoration-color: red;
+    text-decoration-style: wavy; 
+    text-transform: capitalize;
+    text-indent: 20px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    line-height:52px;
+    /* text-shadow: 2px 2px 5px red; */
+}
+/* h1{
+    color:black;
+} */
+ p{
+    color:white;
+    /* text-align:right;
+    text-align: justify; */
+    /* direction: rtl !important; */
+    /* white-space: nowrap; */
+    font-style: italic
+ }
+ span{
+    font-style: normal;
+    color:red;
+    font-size: 50px;
+    font-weight:bold;
+ }

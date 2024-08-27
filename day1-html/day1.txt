@@ -1,0 +1,10 @@
+html tags
+head, body
+doctype
+img, link, img as link
+h1---->h6
+p, div
+lists (ol, ul, dl)
+table (thead, tfoot , tbody, caption, colspan, rowspan)
+meta tages
+sematic elements, (nav, header, section, footer, artical)

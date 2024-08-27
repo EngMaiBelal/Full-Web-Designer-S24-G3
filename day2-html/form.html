@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="home.html" target="_blank" method="post">
+        <input type="text" placeholder="0101987564" readonly><br>
+        <label for="first"> First Name:</label><br>
+        <input name="first-name" type="text" id="first" minlength="3" required><br>
+        <span>please enter 3 letters at least</span><br> <!-- comment to user -->
+        <label>Password:</label><br><br>
+        <input name="password"  type="password"><br><br>
+        <small> password contain small, capital, ...</small><br><br>
+        <input name="last-name"  type="text" placeholder="write your last name" required><br><br>
+
+        <input type="email" name="email" placeholder="your email" required><br><br>
+        <textarea cols="20" rows="6" placeholder="write your message"></textarea><br><br>
+        <label>Telephone</label><br>
+        <input type="tel"><br>
+        <label>Number</label><br>
+        <input type="number"  min="3" max="11"><br> <!-- 3 to 11 range-->
+        <label>Phone</label><br>
+        <input type="phone"><br>
+        <!-- <label>Select your favorite fruit</label> -->
+         <!-- size="2" -->
+        <select name="fav-fruits"> 
+            <option value="orange"> orange </option>
+            <option value="apple"> apple </option>
+            <option value="banana"> banana</option>
+            <option hidden selected disabled> select fruit</option>
+        </select>
+
+        <!-- radio and checkbox -->
+        <h2>SELECT YOUR FAVORITE LANGUAGE</h2>
+        <input type="checkbox" value="html" name="html">
+        <span>HTML</span><br>
+        <input type="checkbox" value="css" name="css">
+        <label>CSS</label><br>
+        <input type="checkbox" value="js" name="js">
+        <label>JS</label><br>
+
+
+        <h2>SELECT YOUR Age</h2>
+        <input type="radio" value="1-10" name="my-age" required>
+        <span>1-10</span><br>
+        <input type="radio" value="11-20" name="my-age" required>
+        <label>11-20</label><br>
+        <input type="radio" value="21-30" name="my-age" required>
+        <label>21-30</label><br><br>
+        <input type="file"><br>
+        <input type="search"><br>
+        <!-- <input type="submit" value="register"> -->
+        <!-- <input type="submit"> -->
+        <input type="datetime-local"><br>
+        <input type="reset">
+        
+        <button name="submit"> register </button>
+    </form>
+</body>
+</html>

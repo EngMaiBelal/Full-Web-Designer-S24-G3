@@ -1,0 +1,46 @@
+/* @media(max-width: 359.98px){
+} */
+div{
+
+}
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {  
+    
+}
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+} 
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/*
+
+
+In CSS, prefixes are added to properties to ensure that new or experimental features are compatible with different browsers, especially before they become standardized. Here’s a breakdown of why this practice is important:
+
+Browser Compatibility: Different browsers often implement new CSS features at different times. Prefixes allow developers to use these features before they are fully supported across all browsers. For example, properties like -webkit-, -moz-, -ms-, and -o- are used to target specific browser engines (WebKit, Gecko, Trident, and Presto, respectively).
+
+Experimental Features: When a new CSS property or value is proposed, it might be experimental and not yet standardized. Prefixes indicate that the feature is not final and may change. Using these prefixes allows developers to experiment with the feature and provide feedback before it becomes a standard.
+
+Graceful Degradation: By using prefixed properties alongside standard ones, developers can ensure that their websites degrade gracefully. This means that users with older browsers that do not support the unprefixed property will still get a reasonable experience, albeit without some of the newer features.
+
+Future-Proofing: Over time, the CSS specifications evolve, and the use of prefixes for certain properties may be phased out as they become standardized. Keeping up with these changes ensures that your CSS remains relevant and functional across different browser versions.
+
+Example:
+
+If you were using the border-radius property in its early days, you might have written:
+
+css
+Copy code
+/* Old syntax with prefixes */
+/* -webkit-border-radius: 10px; Safari and Chrome */
+/* -moz-border-radius: 10px;    Firefox */
+/* -ms-border-radius: 10px;     Internet Explorer */
+/* -o-border-radius: 10px;      Opera */
+/* border-radius: 10px;        Standard syntax */

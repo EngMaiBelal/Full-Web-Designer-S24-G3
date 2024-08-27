@@ -1,0 +1,55 @@
+/* .image-facebook{
+    width: 200px;
+    height:200px;
+} */
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+div{
+    width: 250px;
+    height: 500px;
+    border: 1px solid black;
+    /*position: static; default*/
+    margin: 5px;
+  
+
+}
+
+.red{
+    background-color: red;
+    /* position: fixed; */
+    /* top:0px; */
+    /* bottom:0px;
+    right:0px; */
+}
+
+.blue{
+    background-color: blue;
+    /* position:absolute;
+    top:5px;
+    right:10px */
+}
+.green{
+    background-color: green;
+    /* position:sticky; */
+    /* top:0px */
+    
+}
+.yellow{
+    background-color: yellow;
+    
+}
+.orange{
+    background-color: orange;
+    position: relative;
+    top:20px;
+    left:20px;
+}
+
+/* 1- fixed  مبيحجزش مكانه / ثابت في الاسكرول
+2- relative بيحافظ علي مكانه وبيتحرك من مكانه الاصلي
+3- absolute مبيحجزش مكانه/ مبيظهرش في الاسكرول
+4- sticky بتحافظ علي مكانها/ وبتثبت لما تعمل اسكرول */

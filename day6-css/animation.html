@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .red {
+            background-color: red;
+            padding: 5px;
+            height: 200px;
+            width: 200px;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            animation-name: khaled;
+            animation-duration: 5s;
+            /* animation-delay: 2s; */
+            animation-iteration-count: 3;
+            animation-direction:alternate;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        @keyframes khaled {
+            /* from{background-color: red;}
+            to{background-color: blue;} */
+            0%{background-color: red;}
+            25%{background-color: yellow;}
+            50%{background-color: blue;}
+            100%{background-color: green;}
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        footer
+    </footer>
+    <div class="red">Red</div>
+    <nav>
+        nav
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+
+1) Write a js program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate and show to the user (the percentage and the grade) according to following: 
+Percentage >= 90%: Grade A
+Percentage >= 80%: Grade B
+Percentage >= 70%: Grade C
+Percentage >= 60%: Grade D
+Percentage >= 40%: Grade E
+Percentage <   40%: Grade F
+NOTE:-
+* The full mark of each subject is 20 and max grade: 100
+
+2) Get 3 numbers from user and calculate max and minimum. required 
+-------------------------------------------------------------------------------------------
+3) Get 1 number from user and check if the number negative or positive. Bounce 2 points
+
+4) Get 1 number from user and check if the number even or odd. bounce 2 points
+
+5) Calculate specific root of any number. bounce

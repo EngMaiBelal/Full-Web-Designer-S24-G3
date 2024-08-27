@@ -1,0 +1,32 @@
+.container {
+    background-color: DodgerBlue;
+    height:500px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: stretch;
+  }
+  
+  .container > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 300px;
+  }
+  /* row axis
+  column axis */
+  div.one {
+    background-color: #f1f1f1;
+
+  }
+  div.two {
+    background-color: #ba0d0d;
+
+  }
+  div.three {
+    background-color: #330d8d;
+
+  }

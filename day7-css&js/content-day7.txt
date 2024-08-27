@@ -1,0 +1,3 @@
+1- display list-item, table
+2- media , animation library, auto prefix
+3- js variable, datatype, operators, place in html, output, let,var,const,if, switch statment

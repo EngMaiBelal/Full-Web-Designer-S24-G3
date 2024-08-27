@@ -1,0 +1,66 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 2000px
+}
+div{
+    width: 100px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto
+  
+
+}
+.red-parent, .blue-parent, .green-parent, .orange-parent, .yellow-parent{
+    background-color: burlywood;
+    border: 1px dotted black;
+}
+.red, .blue, .green, .orange, .yellow{
+    width: 50px;
+    height:50px;
+}
+.red{
+    background-color: red;
+   
+}
+.blue-parent{
+    position:absolute;
+    top:0px;
+}
+.blue{
+    background-color: blue;
+    position:relative;
+    top:50px;
+    left:50px;
+    
+}
+/* .green-parent{
+    position:relative;
+} */
+.green{
+    background-color: green;
+    position:sticky;
+    top: 0px;
+
+    
+}
+.yellow{
+    background-color: yellow;
+    
+}
+.orange{
+    background-color: orange;
+    
+}
+
+/* parent-child concept
+position relative
+    1- parent is not static 
+        postion absolute to parent ==> child element will be relative to the parent
+    2- parent static(default) / no parent 
+        element relative to itself */
+/* position sticky when scroll with parent the end is end parent   */

@@ -1,0 +1,73 @@
+/* p{
+    border: 1px solid red;
+    outline: 5px solid black;
+    outline-offset: 15px;
+    margin:20px;
+} */
+
+ul {
+    list-style-type: circle;
+    list-style-position: outside;
+    /*outside-default*/
+}
+
+li {
+    border: 1px solid black;
+}
+
+ol {
+    list-style-type: lower-roman;
+    list-style-position: inside;
+}
+
+/* ol li{
+
+}
+ol.list{
+
+} */
+#customers td,
+#customers th {
+    border: 1px solid rgb(145, 139, 139);
+    text-align: center;
+}
+
+#customers {
+    border-collapse: collapse;
+    margin: 5px;
+}
+
+#customers th {
+    background-color: #48b5b5;
+    font-size: 24px;
+    color: white;
+}
+
+a {
+    color: hotpink;
+    text-decoration: none;
+}
+a:link{
+    color:blueviolet
+}
+a:visited{
+    color:black
+}
+a:hover {
+    color: blue
+}
+a:active{
+    color:red
+}
+p {
+    color: red
+}
+#btn-main{
+    margin:10px;
+    padding: 10px 5px;
+    background-color: red;
+    color: white;
+}
+/* .container a:hover{
+
+} */

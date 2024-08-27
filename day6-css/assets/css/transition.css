@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.red{
+    background-color: red;
+    padding:5px;
+    height: 200px;
+    width: 200px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: 5s;
+    /* transition-delay: 2s; */
+    transition-timing-function:cubic-bezier(1,.03,.25,1);
+   
+}
+.red:hover{
+    /* width: 500px; */
+    background-color: green;
+
+}
+.blue{
+    background-color: blue;
+    padding:5px;
+    height: 200px;
+    width: 200px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: 5s;
+    /* transition-delay: 2s; */
+    transition-timing-function:ease-out;
+  
+}
+.blue:hover{
+    /* width: 500px; */
+    background-color: green;
+}
+/* transition-property
+transition-duration
+transition-timing-function
+transition-delay
+trsnsition */
