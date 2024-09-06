@@ -1,0 +1,9 @@
+1- Form validation
+ <!-- without any html validation
+    name => more than 3 letteres and equal // required //message
+    phone => 11 digit // pattern egypt => regular expression // required
+    email => pattern email //required
+    age => number not require -->
+
+2- toDolist app
+	

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <style>
+        .container{
+            display:grid; /* 1column automatic creation row */
+            height: 300px;
+            /* grid-template-columns: 25% 100px auto min-content max-content repeat() minmax() fr; */
+            /* grid-template-columns: repeat(4, 20% ) minmax(100px, 200px); */
+            /* fit-content(200px) */
+            /* grid-template-columns: repeat(2, 25%); */
+            grid-template-columns: [omar] 25% [nadeen] 25% [hossam] 25%; /*name lines*/
+            /* grid-template-rows: 100px 200px; */
+
+            /* grid-auto-flow: row; */
+            /* grid-auto-rows: 100px; height automatic row */
+
+            /* grid-auto-flow: column;
+            grid-auto-columns: 100px; width-> column */
+            /* column-gap: 20px;
+            row-gap: 50px; */
+            /*grid Alignment*/ 
+
+            /* inside total colum, row*/
+            /* justify-content: center; */
+            /* align-content: center; */
+            /*item inside its cell*/
+            /* justify-items: center; */
+            /* align-items: center; */
+            /* grid-template-areas: "area-1 area-2" "area-3 area-4"; */
+            /* grid-template:200px 400px / repeat(2, 25%); row column */
+            grid-auto-flow: row dense;
+        }
+   
+        .red{
+            background-color: red;
+            border: 1px solid black;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            /* grid-column-start: omar;
+            grid-column-end: nadeen;
+            grid-row-start: 1; */
+            /* grid-row-end: 3; */
+
+        }
+        .blue{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            background-color: blue;
+            border: 1px solid black;
+            padding: 3px;
+        }
+        .green{
+            background-color: green;
+            border: 1px solid black;
+
+        }
+        .orange{
+            background-color: orange;
+            padding:5px;
+            border: 1px solid black;
+
+        }
+    </style>
+
+</head>
+<body>
+    <!-- css-grid -->
+    
+    <div class="container">
+        <div class="red">red</div>
+        <div class="blue">blue</div>
+        <div class="green">green</div>
+        <div class="orange">Orange</div>
+        <!-- <div class="red">red</div>
+        <div class="blue">blue</div>
+        <div class="green">green</div>
+        <div class="orange">Orange</div> -->
+        <!-- <div class="green">green</div> -->
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+</body>
+</html>

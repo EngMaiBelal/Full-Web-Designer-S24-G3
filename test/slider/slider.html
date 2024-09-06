@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.slider {
+  position: relative;
+  width: 50%;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+</style>
+</head>
+<body>
+    <!-- <button class="prev" onclick="prevSlide()">&#10094;</button> -->
+  <div class="slider">
+    <div class="slides">
+      <img src="1.jpg" alt="Slide 1" class="slide">
+      <img src="2.jpg" alt="Slide 2" class="slide">
+      <img src="3.jpg" alt="Slide 3" class="slide">
+      <img src="4.jpg" alt="Slide 4" class="slide">
+    </div>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+  <script >
+
+let currentSlide = 0;
+
+function showSlide(index) {
+  const slides = document.querySelector('.slides');
+  const totalSlides = document.querySelectorAll('.slide').length;
+  if (index >= totalSlides) {
+    currentSlide = 0;
+  } else if (index < 0) {
+    currentSlide = totalSlides - 1;
+  } else {
+    currentSlide = index;
+  }
+  slides.style.transform = `translateX(${-currentSlide * 100}%)`;
+}
+
+function nextSlide() {
+  showSlide(currentSlide + 1);
+}
+
+// function prevSlide() {
+//   showSlide(currentSlide - 1);
+// }
+
+// Initialize the slider
+showSlide(currentSlide);
+
+</script>
+</body>
+</html>

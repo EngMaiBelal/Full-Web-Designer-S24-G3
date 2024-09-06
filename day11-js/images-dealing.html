@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        img{ 
+            width: 100px;
+            height: 120px;
+            margin: 20px;
+        } -->
+    <!-- </style> -->
+</head>
+<body>
+    <div>
+        <img src="images/front-page-team-1.jpg" alt="" onmouseover="zoomIn(this)"  width="100px" height="100px" onmouseout="zoomOut(this)" >
+        <img src="images/front-page-team-2.jpg" alt="">
+        <img src="images/front-page-team-3.jpg" alt="">
+        <img src="images/front-page-testimonial-1.jpg" alt="">
+    </div>
+    <script>
+
+        function zoomIn(img){
+            // img.style.height = (img.width) + 50 + "px";  /* css styling internal*/
+            // img.style.height = (img.height) + 100 +"px";
+            img.width = parseInt((img.width) + 100 +"px"); /* attribute, width, height*/
+            img.height = parseInt((img.height) + 100 +"px"); /* attribute, width, height*/
+            
+        }
+        function zoomOut(img){
+            img.width =parseInt(100 +"px");
+            img.height = parseInt(100 +"px");
+        }
+        
+    </script>
+</body>
+</html>

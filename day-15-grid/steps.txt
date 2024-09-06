@@ -1,0 +1,16 @@
+html, css (grid), js advanced(Asy, ...), bom, dom, ajax,json 
+cv,js templates
+frameworks frontend (react, angular)
+github/ linkedin
+oop, solidprinciple,design pattern,architer pattern
+
+
+--------------------------------------------------------------
+backend
+db--> oop, solidprinciple,design pattern,architer pattern
+
+frontend developer
+backend developer
+full stuck
+mean
+mern

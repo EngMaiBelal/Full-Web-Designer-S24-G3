@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <!-- without any html validation
+    name => more than 3 letteres and equal // required //message
+    phone => 11 digit // pattern egypt => regular expression // required
+    email => pattern email //required
+    age => number not require -->
+    <form action="">
+        <input class="fname" type="text" name="fname" placeholder="enter your name">
+
+        <input type="number" name="age" placeholder="enter your age">
+        <button>Submit</button>
+    </form>
+    <script>
+        let fname = document.querySelector(".fname"); 
+        document.forms[0].onsubmit = function(event){
+            let flagFname = false;
+        
+            if(flagFname === false ){
+                event.preventDefault();
+            }
+
+            if(fname.value !== "" && fname.value.length >= 3){
+                flagFname = true;
+            }     
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:500px;
+            height:500px;
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- localStorge -->
+    <div>
+
+    </div>
+    <div class="one">
+
+    </div>
+    <div class="two">
+        
+    </div>
+    <!-- sessionStorage -->
+
+    <!-- cookies -->
+    <!-- filesystem //google drive -->
+    <!-- dataBase -->
+    <button>Convert Color</button>
+    <script>
+       
+        let btn= document.querySelector("button");
+        let div= document.querySelector("div");
+       
+        btn.onclick = function(){
+            window.sessionStorage.setItem("x", "blue");
+            window.sessionStorage.setItem("size", "5");
+        }
+        if(window.sessionStorage.getItem("x")){
+            div.style.backgroundColor = window.sessionStorage.getItem("x");
+        }
+
+         // <!-- localStorge -->
+        // console.log(window.localStorage)
+        // btn.onclick = function(){
+        //     window.localStorage.setItem("color", "black");
+        //     window.localStorage.setItem("size", "5");
+        // }
+        // if(window.localStorage.getItem("color")){
+        //     div.style.backgroundColor = window.localStorage.getItem("color");
+        // }
+        // // console.log(window.localStorage["color"]);
+        // window.localStorage.removeItem("size");
+        // window.localStorage.clear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+grid style in child
+image

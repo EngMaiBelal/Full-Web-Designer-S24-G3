@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: auto;
+            margin: 0;
+            padding: 0;
+            /* width: 2000px */
+        }
+        div.one{
+            background-color: blueviolet;
+            height: 100vh;
+        }
+        div.two{
+            background-color: rgb(180, 226, 43);
+            height: 100vh;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            border: none;
+            color: rgb(235, 230, 230);
+            border-radius: 4px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 6px;
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+    </div>
+    <div class="two">
+    </div>
+    <button id="up"> Up </button>
+    <!-- <button onclick="printFile()">Print </button> -->
+    <script>
+        let upBtn = document.getElementById("up");
+        console.log(window.scrollY);
+        window.onscroll = function(){
+            if(window.scrollY >= 220){
+                upBtn.style.display ="block";
+            }else{
+                upBtn.style.display ="none";
+
+            }
+        }
+        upBtn.onclick = function(){
+            window.scrollTo({
+                left:0,
+                top:0,
+                behavior: "smooth"
+            })
+        }
+        // console.log(window.scrollY);
+        // window.scrollto({
+        //         left:0,
+        //         top:0,
+        //         behavior: "smooth"
+        // });
+        // function printFile(){
+
+        //     window.print();
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="demo">
+        <!-- comment -->
+        <span class="one">one</span>
+        <!-- comment -->
+        <span class="two">two</span>
+        <!-- comment -->
+        <span class="three">three</span>
+    </div>
+    <div id="mydiv">
+        <p id="myp">
+            my paragh kjhg kkj
+        </p>
+    </div>
+    <script>
+        let p = document.getElementById("myp").cloneNode(true);
+        let div =document.getElementById("mydiv");
+        div.appendChild(p);
+        // let span = document.querySelector(".two");
+        // console.log(span.nextSibling);
+
+        // let x= confirm("are you sure"); 
+        // let y= prompt("enter your name");
+        // console.log(typeof(y), y);
+        // console.log(typeof(y));
+        // setTimeout(function(){
+        //     console.log('ok')
+        // }, 3000)
+    </script>
+</body>
+</html>

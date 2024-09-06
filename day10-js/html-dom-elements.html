@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="myImg" src="random-blog-post-2.jpg" alt="coffee" width="200px">
+    <p id="demo"></p>
+
+
+    <script>
+        const imgAttr = document.getElementById("myImg").attributes;
+        let text ="";
+        for(let i =0; i< imgAttr.length; i++){
+            // console.log(imgAttr[i].name);
+            // console.log(imgAttr[i].value);
+             text+= imgAttr[i].name +" = "+imgAttr[i].value+ "<br>";
+        }
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+</html>

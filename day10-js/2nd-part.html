@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent" style="background-color: rgb(225, 169, 86);">
+        <p id="first">First p</p>
+        <p id="second">second p</p>
+    </div>
+    <button id="btnAdd" onclick="addElement()">Add Image</button>
+    <button id="btnRemove" onclick="removeElement()">Remove Element</button>
+    
+    <script>
+        function addElement(){
+            let newImg = document.createElement("img"); //<img>
+            let parent = document.getElementById('parent');
+            newImg.setAttribute("src","random-blog-post-2.jpg"); //<img src="random-blog-post-2.jpg" >
+            newImg.setAttribute("width","200px"); //<img src="random-blog-post-2.jpg" width="200px">
+            parent.insertBefore(newImg, parent.children[1]);
+            // let newImg = '<img src="random-blog-post-2.jpg" width="200px">';
+            // parent.innerHTML += newImg;
+            // parent.prepend(newImg);
+            // parent.append(newImg);
+            // parent.before(newImg);
+            // parent.after(newImg);
+        }
+        function removeElement(){
+            let parent = document.getElementById('parent');
+            // console.log(parent.firstChild);
+            // parent.children[0].remove();
+            // console.log(parent.children);
+            // console.log(parent.childNodes);
+            // console.log(parent.firstChild);
+
+            // parent.firstChild.remove();
+            // parent.lastChild.remove();
+            parent.firstElementChild.remove();
+            // parent.lastElementChild.remove();
+        }
+    </script>
+</body>
+</html>

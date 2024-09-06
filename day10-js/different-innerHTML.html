@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="example">Hello <span>World</span>
+        <ul>
+            <li>milk</li>
+            <li>coffee</li>
+            <li>water</li>
+        </ul>
+        <img src="">
+        </div>
+    <script>
+        const element = document.getElementById('example');
+        // console.log(element.textContent); 
+        // console.log(element.innerText); 
+        // console.log(element.innerHTML);
+        // element.textContent = "New text content";
+        // element.innerText = "New visible text";
+        element.innerHTML = "<p>New <b>HTML</b> content</p>";
+    </script>
+</body>
+</html>

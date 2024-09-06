@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            opacity:1;
+        }
+        div{
+            background-color: yellow;
+            width: 800px;
+            height: 300px;
+            margin:auto
+        }
+        ul{
+            width: 50%;
+            margin:auto
+        }
+        ul li {
+            width: 100px;
+            height:100px;
+            border-radius: 50%;
+            list-style-type: none;
+            display: inline-block;
+            opacity: 0.6;
+
+        }
+        li.one{
+            background-color: rgb(79, 128, 0);
+        }
+        li.two{
+            background-color: blue;
+        }
+        li.three{
+            background-color: rgb(156, 11, 11);
+        }
+        li.four{
+            background-color: rgb(4, 2, 19);
+        }
+        ul li:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li class="one"></li>
+        <li class="two"></li>
+        <li class="three"></li>
+        <li class="four"></li>
+    </ul>
+    <div id="testing">
+
+    </div>
+    <script>
+        let lists = document.querySelectorAll("li"); //array
+        let testDiv = document.getElementById("testing");
+        lists.forEach(function(list){
+            list.addEventListener("click", function(){
+                let newColor = window.getComputedStyle(list).backgroundColor;
+                window.localStorage.setItem("bg-color", newColor);
+                testDiv.style.backgroundColor = window.localStorage.getItem("bg-color");
+            })
+        })
+       if(window.localStorage.getItem("bg-color")){
+
+           testDiv.style.backgroundColor = window.localStorage.getItem("bg-color");
+       }
+    </script>
+</body>
+</html>

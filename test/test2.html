@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv">
+        <p id="myp">
+            my paragh kjhg kkj
+        </p>
+    </div>
+    <script>
+        let p = document.getElementById("myp");
+        let div =document.getElementById("mydiv");
+        // div.appendChild(p);
+        p.addEventListener('click',test1);
+        p.addEventListener('click',test2);
+       function test1(){
+        console.log('test1');
+       }
+       function test2(){
+        let newp= p.cloneNode(true);
+        newp.className = "test";
+        div.appendChild(newp);
+       
+       }
+    //    let cloned = document.querySelector('.test');
+    //    cloned.addEventListener('click', function(e){
+    //      if(e.target){
+    //          console.log(e.target);
+    //      }
+    //     });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+        <p class="main">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam ducimus natus cupiditate, saepe, ipsam, esse explicabo iste temporibus reprehenderit quod recusandae tempore nam laborum expedita possimus consequatur alias ipsum omnis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam ducimus natus cupiditate, saepe, ipsam, esse explicabo iste temporibus reprehenderit quod recusandae tempore nam laborum expedita possimus consequatur alias ipsum omnis?</p>
+        <p class="main">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam ducimus natus cupiditate, saepe, ipsam, esse explicabo iste temporibus reprehenderit quod recusandae tempore nam laborum expedita possimus consequatur alias ipsum omnis?</p>
+   </div>
+   <button>
+    <!-- Convert style of p  main color, background, font size -->
+     Click
+   </button>
+
+
+   <!-- slide -->
+   <div> Dropdown </div>
+   <div>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $(".demo")
+            // $("#main")
+            // document.getElementById("btn").onclick = ....
+            // $("#btn").click(function(){
+            //     console.log("hello jquery");
+            // })
+            // let btn = document.getElementById("btn");
+            // btn.onclick = function(){
+            //     console.log("hello js");
+            // }
+            $("#btn").click(function(){
+                $("#main").css("color", "red");
+            })
+        });
+    </script>
+</body>
+</html>

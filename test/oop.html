@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // class User{
+        //     y= "3";
+        //     constructor(image, fname, x){
+        //         this.image =image;
+        //         this.fname = fname;
+        //         this.x = x;
+        //     }
+        //     stop(){
+        //         return "stop";
+        //     }
+        // }
+        // class Admin extends User{
+        //     constructor(image, fname, age){
+        //         super(image, fname);
+        //         this.age = age;
+        //     }
+        // }
+        // let objAdmin = new Admin("image","omar",20);
+        // console.log(objAdmin.image);
+        // console.log(objAdmin.fname);
+        // console.log(objAdmin.age);
+        // console.log(objAdmin.x);
+        // console.log(objAdmin.y);
+
+        class User{
+            _image;
+
+            get Image(){
+                return this._image;
+            }
+            set Image(image){
+                this._image = image;
+            }
+        }
+
+            let x = new User;
+            x.image = "image";
+            console.log(x.image);
+
+            // x.Image = "image";  
+            // console.log(x.Image);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        <p id="omar">
+            this is first par.
+        </p>
+        <button> copy </button>
+        <!-- <button onclick="function-name"> copy </button> -->
+
+    </div>
+
+    <script>
+        let div = document.getElementById("demo");
+        let p = document.getElementById("omar");
+        let btn = document.querySelector("button");
+        // btn.onclick = function(){
+        //     let newp = p.cloneNode(true);
+        //     newp.id = "ali";
+        //     div.appendChild(newp);
+        // }
+
+        // btn.onclick = function(){
+        //     console.log("the first clone");
+        // }
+        btn.addEventListener("click",function(){
+            let newp = p.cloneNode(true);
+            newp.id = "ali";
+            div.appendChild(newp);
+        });
+        btn.addEventListener("click",function(){
+            console.log("the first clone");
+        });
+        // how to add event to element doesnot creat yet
+        
+    </script>
+</body>
+</html>
