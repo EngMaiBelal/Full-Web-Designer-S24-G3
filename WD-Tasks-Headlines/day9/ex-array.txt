@@ -1,0 +1,27 @@
+const test =[ 
+	{
+  		name: "John",
+  		age: 30,
+  		cars: [
+    			{name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+  		]
+	},
+	{
+  		name: "omar",
+  		age: 20,
+  		cars: [
+    			{name:"Fiat", models:["500", "Panda"]},
+  		]
+	},
+	{
+  		name: "ali",
+  		age: 22,
+  		cars: [
+    			{name:"BMW", models:["320", "X3", "X5"]}
+  		]
+	},
+];
+
+name is john, car name is ford, models are fiesta , focus, mustage.
+name is omar, car name is fiat, models are panda, 500.
+name is ali, car name is bmw, models are 320, x3, x5.

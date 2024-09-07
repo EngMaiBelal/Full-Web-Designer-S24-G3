@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .anime {
+            width: 200px;
+            height: 150px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+
+        @keyframes example {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: 400px;
+                top: 0px;
+            }
+
+            50% {
+                left: 400px;
+                top: 300px;
+            }
+
+            75% {
+                left: 0px;
+                top: 300px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="anime"></div>
+</body>
+
+</html>

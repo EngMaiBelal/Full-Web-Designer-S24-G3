@@ -1,0 +1,14 @@
+// Calculate shape area Application  for (rect, square, circle, triangle)
+
+// user, admin, employee, super admin
+user ---> name, password, email               ->crud operation () ---> profile
+admin --> name , email, password, permission  ->crud operation () ---> products
+employee --> name, password, email            ->crud operation () ---> profile
+super admin --> name, email, permission       ->crud operation () ---> profile, products
+
+4 method ---> create, read, update, delete
+console.log("create user profile")
+
+
+
+no duplication code 

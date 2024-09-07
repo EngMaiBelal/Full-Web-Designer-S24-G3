@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<h1>header </h1>
+<h2>The second header</h2>
+
+<p id="click" ondblclick="myFunction()">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et reprehenderit omnis, dignissimos, numquam alias inventore, ab amet eos voluptates autem dolor quaerat quam exercitationem. Ipsa reiciendis aspernatur incidunt mollitia pariatur.</p>
+
+<p id="demo"></p>
+<form action="">
+    <input type="text" id="fname" onblur="upperCase()">
+</form>
+
+
+
+<script>
+    function myFunction() {
+      document.getElementById("click").innerHTML = "Hello World";
+    }
+    function upperCase(){
+        let elem = document.getElementById('fname');
+        elem.value = elem.value.toUpperCase();
+    }
+    </script>
+</body>
+</html>
