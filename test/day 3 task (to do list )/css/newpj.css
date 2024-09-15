@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #0D7377;
+}
+
+body {
+    direction: rtl;
+    height: 738px;
+    overflow: hidden;
+    font-family: "IBM Plex Sans Arabic"
+}
+.navbar {
+    background-color: transparent;
+    font-family: "IBM Plex Sans Arabic"
+}
+.btn{
+    color: white;
+    background-color: #0D7377;
+}
+.sign-btn {
+    color: white;
+    background-color:var(--primary-color);
+    padding: 16px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;    
+}
+.more-btn {
+    color: black;
+    background-color:white;
+    padding: 16px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+}
+.btn:focus {
+    box-shadow: none;
+}
+
+.sign-btn:hover {
+    color: rgba(255, 255, 255, 0.741);
+}
+.more-btn:hover {
+    color: rgba(0, 0, 0, 0.689);
+}
+.login:hover {
+    color: white;
+}
+.login  {
+    min-width: 20vw;
+    max-width: 40vw;
+    background-color: var(--primary-color);
+    color: white;
+}
+.login:hover {
+    color: rgba(255, 255, 255, 0.741);
+}
+
+.user , .pass {
+    width: 400px;
+    margin: auto;
+}
+.user input , .pass input {
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-bottom: gray solid 2px;
+    max-width: 400px;
+    min-width: 70px;
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: var(--primary-color) solid 2px;
+}
+.reg {
+    direction: ltr;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 1px #9b9696b3;
+}
+.bg-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: blur(90%) ;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+.bg-imgg {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.4) ;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+.sign {
+    padding-top: 60px;    
+}
+.start h1 , .start h3 {
+    color: white;
+}
+.start {
+    position: relative;
+    
+}
+#divvvv{
+    align-items: center;
+    margin-left: 20%;
+}
+#myChart{
+    margin-top: -50px;
+}
+.side_details{
+    margin-left: 0px;
+}
+.topics_list li {
+    list-style: none;
+}
+
+.topics_list li a {
+    text-decoration: none;
+    display: flex;
+    margin: 50px 3px;
+    font-weight: 700;
+    color: var(--color-light-gray);
+    transition: 0.3s;
+}
+
+.topics_list li a:hover {
+    opacity: 0.8;
+}
+
+.topics_list li a span {
+    width: 24px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    margin-right: 10px;
+    border-radius: 3px;
+}

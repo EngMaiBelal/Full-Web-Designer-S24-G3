@@ -1,0 +1,11 @@
+.btn{
+    padding: 20px 20px;
+    background-color: skyblue;
+    color: white;
+    border-radius: 10%;
+}
+#list{
+    list-style: none;
+    font-size: 22px;
+    font-weight: 500;
+}

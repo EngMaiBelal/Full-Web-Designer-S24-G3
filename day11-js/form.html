@@ -11,7 +11,7 @@
     phone => 11 digit // pattern egypt => regular expression // required
     email => pattern email //required
     age => number not require -->
-    <form action="">
+    <form id="form-main" action="">
         <input class="fname" type="text" name="fname" placeholder="enter your name">
 
         <input type="number" name="age" placeholder="enter your age">
@@ -21,14 +21,14 @@
         let fname = document.querySelector(".fname"); 
         document.forms[0].onsubmit = function(event){
             let flagFname = false;
-        
-            if(flagFname === false ){
-                event.preventDefault();
-            }
 
             if(fname.value !== "" && fname.value.length >= 3){
                 flagFname = true;
-            }     
+            }else if(flagFname === false ){
+                flagFname = false;
+                event.preventDefault();
+            }
+                
         }
     </script>
 </body>

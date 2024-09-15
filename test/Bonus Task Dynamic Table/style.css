@@ -1,0 +1,23 @@
+h1{
+    color: rgb(0, 119, 255);
+}
+table {
+    width: 100%;
+    background-color: aqua;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px;
+}
+/* 
+input{
+    background-color: aqua;
+} */
+

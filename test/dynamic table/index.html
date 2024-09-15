@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dynamic Table</h1>
+    <label for="nameInput">name</label> </label>
+    <input type="text" id="nameinput" placeholder="Enter name">
+    <br><br>
+    <label for="ageInput">price </label>
+    <input type="number" id="priceinput" placeholder="Enter price">
+    <br><br>
+    <button class="btn" onclick="addrow()">AddRow</button>
+
+    <table border="2" id="table" >
+        <tr>
+            <td>name</td>
+            <td>price</td>
+            <td><button class="btn-btn">delete</button></td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .error-message {
+            color: red;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form name="myForm" id="myForm" action="">
+        <label for="fname">Name :</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your name">
+        <span id="fnameError" class="error-message"></span> <br>
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email">
+        <span id="emailError" class="error-message"></span><br>
+        
+        <label for="password">Password :</label>
+        <input type="text" id="password" name="password" placeholder="Enter your password">
+        <span id="passwordError" class="error-message"></span><br>
+        
+        <label for="phone">Phone :</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone">
+        <span id="phoneError" class="error-message"></span><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .error-message {
+            color: red;
+            font-size: 0.9em; 
+        }
+        .form-group {
+            margin-bottom: 16px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Form Validation</h1>
+        <form name="myForm" id="myForm" >
+            <div class="form-group">
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" name="fname" class="form-control" placeholder="Enter your name">
+                <span id="fnameError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" class="form-control" placeholder="Enter your email">
+                <span id="emailError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password" class="form-control" placeholder="Enter your password">
+                <span id="passwordError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" class="form-control" placeholder="Enter your phone">
+                <span id="phoneError" class="error-message"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

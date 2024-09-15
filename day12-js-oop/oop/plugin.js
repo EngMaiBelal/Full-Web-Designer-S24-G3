@@ -24,7 +24,7 @@
 // class => blueprint which objects to creation  الرسم الهندسي // declered once
 // object => instance of class  عماره //create objects many times  for the same class
 // let newObj = {
-//     fname: "hossam",  //proberty
+//     fname: "hossam",  //property
 //     id: 12,
 //     msgPrint: function(){  // method
 //         return this.fname;
