@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Responsive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        /* 📱 موبايل صغير */
+        @media only screen and (max-width: 599px) {
+            body {
+                background-color: lightblue;
+            }
+
+            h1 {
+                color: blue;
+            }
+
+            p {
+                color: navy;
+            }
+        }
+
+        /* 📱 موبايل كبير */
+        @media only screen and (min-width: 600px) and (max-width: 767px) {
+            body {
+                background-color: lightgreen;
+            }
+
+            h1 {
+                color: green;
+            }
+
+            p {
+                color: darkgreen;
+            }
+        }
+
+        /* 📲 تابلت */
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            body {
+                background-color: lightyellow;
+            }
+
+            h1 {
+                color: goldenrod;
+            }
+
+            p {
+                color: darkorange;
+            }
+        }
+
+        /* 💻 لابتوب */
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            body {
+                background-color: lightcoral;
+            }
+
+            h1 {
+                color: darkred;
+            }
+
+            p {
+                color: maroon;
+            }
+        }
+
+        /* 🖥️ ديسكتوب كبير */
+        @media only screen and (min-width: 1200px) {
+            body {
+                background-color: lightpink;
+            }
+
+            h1 {
+                color: purple;
+            }
+
+            p {
+                color: indigo;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Website</h1>
+    <p>lorem ......</p>
+</body>
+</html>
